@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Badge from '../components/Badge.astro';
+import GitHubIcon from "../components/icons/GitHubIcon.astro"
+import SocialPill from '../components/SocialPill.astro';
+import LinkedinIcon from "../components/icons/LinkedinIcon.astro"
+import GmailIcon from "../components/icons/GmailIcon.astro"
+import SectionContainer from '../components/SectionContainer.astro';
+import ProyectoIcon from "../components/icons/ProyectoIcon.astro"
+import Projects from '../components/Projects.astro';
+---
+
+<Layout title="Porfolio de Manudev - Desarrollador y Programador Web"
+		description='Contrata a manudev para crear tu Aplicación Web'
+		>
+	<main class="px-4">
+		<SectionContainer class="py-44 pb-22">
+			<img class="rounded-full size-12 mb-4" 
+         	src="https://i.imgur.com/uvTrA1P.jpeg" 
+         	alt="porfmanu"> 
+			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">Hola!, soy manudev <a href="https://linkedin.com/in/manudevcba" target="_blank" rel="noopener" class="flex justify-center items-center"><Badge> Disponible para trabajar</Badge></a> </h1> 
+			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]"> <span class="text-yellow-200/90">Desarrollador Web Junior/Trainee</span> de Cordoba Capital, Argentina.</h2>
+				<nav class="flex gap-x-2 mt-6 flex-wrap">
+					<SocialPill href="https://github.com/manudevcba"> 
+						<GitHubIcon class="size-4 md:size-6" />
+						GitHub
+					</SocialPill>
+						
+					<SocialPill href="https://www.linkedin.com/in/manudevcba/">
+						<LinkedinIcon class="size-4 md:size-6" />
+						LinkedIn
+					</SocialPill>
+
+					<SocialPill href="mailto:manujobdev@gmail.com">	  						
+							<GmailIcon class="size-4 md:size-6" />
+    						manujobdev@gmail.com
+					</SocialPill>			
+				</nav>		
+		</SectionContainer>
+
+		<SectionContainer id="proyectos">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<ProyectoIcon class="size-7" />
+				Proyectos
+			</h2>
+			<Projects />
+		</SectionContainer>
+	</main>
+</Layout>
+
