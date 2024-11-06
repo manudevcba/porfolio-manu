@@ -35,7 +35,7 @@ const { description, title } = Astro.props
     <Header />
     <slot />
     <Footer />
-    <style is:global>
+    <style is:global()>
       :root {
         color-scheme: light dark;
       }
